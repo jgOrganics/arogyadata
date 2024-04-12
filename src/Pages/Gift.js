@@ -1,23 +1,19 @@
 
 import React from 'react'
 import Layout from '../Components/Layouts/Layout'
-import { Box, Card, CardContent, Checkbox, FormControlLabel, Typography, RadioGroup, Radio } from '@mui/material';
+import { Box, FormControlLabel, Typography, RadioGroup, Radio } from '@mui/material';
 import { TextField, Button, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 
 const Gift = () => {
     const [checked, setChecked] = React.useState(false);
     const [selectedValue, setSelectedValue] = React.useState('female');
     const [selectedItem, setSelectedItem] = React.useState('');
-    const [selectedItems, setSelectedItems] = React.useState([]);
+    // const [selectedItems, setSelectedItems] = React.useState([]);
     const handleChange = (event) => {
         setChecked(event.target.checked);
     };
     const handleChange1 = (event) => {
         setSelectedItem(event.target.value);
-    };
-    const handleClick = (item) => {
-        const isSelected = selectedItems.includes(item);
-        setSelectedItems(isSelected ? selectedItems.filter(i => i !== item) : [...selectedItems, item]);
     };
 
     const handleSelect = (event) => {
@@ -58,7 +54,7 @@ const Gift = () => {
                     <TextField
                         name="name"
                         label="Name"
-                        // value={formData.name}
+                        value={checked}
                         onChange={handleChange}
                         fullWidth
                         margin="normal"
