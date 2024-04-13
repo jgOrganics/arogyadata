@@ -54,7 +54,7 @@ const Gift = () => {
                     <TextField
                         name="name"
                         label="Name"
-                        value={checked}
+                        // value={checked}
                         onChange={handleChange}
                         fullWidth
                         margin="normal"

@@ -1,11 +1,10 @@
-// import Dosa from "../images/dosa.jpg";
 import Baby from "../images/Trends/baby.jpg";
 import Aniversary from "../images/Trends/aniversary.jpg";
 import Bday from "../images/Trends/bday.jpg";
 import Val from "../images/Trends/valntines.jpg";
-import UrbanTrees from "../images/park.png";
+// import UrbanTrees from "../images/park.png";
 
-export const TrendMenuList = [
+ const DATA = [
   {
      id:1,
     name: "Trees for b'day ",
@@ -37,7 +36,7 @@ export const TrendMenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: Val,
     price: "₹"+100,
-  },
+  }
 //   {
 //     name: "Trees for Shree Ram",
 //     description:
@@ -52,4 +51,5 @@ export const TrendMenuList = [
 //     image: Gujrati,
 //     price: 500,
 //   },
-];
+]
+export default DATA;

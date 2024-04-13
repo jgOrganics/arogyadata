@@ -7,6 +7,7 @@ import { Link, } from 'react-router-dom';
 import Logo from "../../images/arogyadata.png";
 import "../../Styles/HeaderStyle.css";
 import { useState } from 'react';
+import CartBtn from '../CartBtn';
 
 const Header = () => {
 
@@ -17,7 +18,7 @@ const Header = () => {
   }
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", mr:8 }}>
       <Typography
         color={"goldenrod"}
         variant="h6"
@@ -31,8 +32,8 @@ const Header = () => {
           sx={{ flexGrow: 1 }}
         >
           {/* <FastfoodIcon /> */}
-          {/* My Restaurant */}
-        </Typography>
+           ArogyaData
+         </Typography>
       </Typography>
       <TextField
         label="Search"
@@ -40,17 +41,19 @@ const Header = () => {
         // value={searchText}
         // onChange={handleSearchChange}
         sx={{ width: '300px' }}
-        // InputLabelProps={{ style: { color: darkMode ? '#fff' : '#222' } }} // Set label color here
+        InputLabelProps={{ style: { color: '#fff'  } }} // Set label color here
         style={{
-          // borderColor: darkMode ? '#fff' : '#222',
-          // color: darkMode ? '#fff' : '#222',
+          borderColor:'#fff' ,
+          color:  '#fff',
           marginTop: '10px', marginLeft: "1000px",
         }}
       />
       <Divider />
       <ul className="mobile-navigation">
         <li>
-          <Link activeClassName="active" to={"/"}
+          <Link
+            activeClassName="active"
+            to={"/"}
           >
             Home
           </Link>
@@ -64,6 +67,7 @@ const Header = () => {
         <li>
           <Link to={"/contact"}>Contact</Link>
         </li>
+        <CartBtn/>
       </ul>
     </Box>
   );
@@ -71,12 +75,7 @@ const Header = () => {
   return (
     <>
       <Box>
-        <AppBar component={'nav'}
-          sx={{
-            bgcolor: "black"
-          }}
-
-        >
+      <AppBar component={'nav'} sx={{ bgcolor: "black" }}>
           <Toolbar>
             <IconButton
               color='inherit'
@@ -115,6 +114,7 @@ const Header = () => {
               <ul className="navigation-menu">
                 <li>
                   <Link to={"/"}
+                    activeClassName="active"
                   >
                     Home
                   </Link>
@@ -128,6 +128,7 @@ const Header = () => {
                 <li>
                   <Link to={"/contact"}>Contact</Link>
                 </li>
+                <CartBtn/>
               </ul>
             </Box>
           </Toolbar>
@@ -140,7 +141,7 @@ const Header = () => {
               display: { xs: 'block', sm: "none" },
               "& .MuiDrawer-paper": {
                 boxSizing: "border-box",
-                width: "240px",
+                width: "200px",
               },
             }}>
             {drawer}

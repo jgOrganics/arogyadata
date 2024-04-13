@@ -12,7 +12,7 @@ import '../Styles/HomeStyle.css';
 import Layout from '../Components/Layouts/Layout';
 import { MenuList } from "../Data/data";
 import { GodMenuList } from "../Data/data_god";
-import { TrendMenuList } from "../Data/data_trend";
+import DATA, { TrendMenuList } from "../Data/data_trend";
 
 
 import SwipeableViews from 'react-swipeable-views';
@@ -96,7 +96,7 @@ const Home = () => {
 
   const handleClick = () => {
     // Navigate to the desired route when the button is clicked
-    navigate('/gift');
+    navigate('/products');
   };
 
   return (
@@ -231,8 +231,8 @@ const Home = () => {
       </Box>
 
       <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-        {TrendMenuList.map((menu) => (
-          <Link to="/gift">
+        {DATA.map((menu) => (
+          <Link to="/products">
             <Card sx={{
               // border: 1,
               // borderRadius: 5,
@@ -261,7 +261,9 @@ const Home = () => {
                   </Typography>
                   <Typography variant="body2">{menu.description}</Typography>
 
-                  <NavLink to={`/gift/${menu.id}`} >
+                  <NavLink to={`/products/${menu.id}`}
+                  
+                  >
                     <Button variant='outlined'>Buy Now
                     </Button>
                   </NavLink>
@@ -300,7 +302,7 @@ const Home = () => {
       </Box>
       <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
         {GodMenuList.map((menu) => (
-          <Link to="/gift">
+          <Link to="/products">
             <Card sx={{
               // border: 1,
               // borderRadius: 5,
@@ -328,7 +330,7 @@ const Home = () => {
                     {menu.ratings}
                   </Typography>
                   <Typography variant="body2">{menu.description}</Typography>
-                  <NavLink to={`/gift/${menu.id}`} >
+                  <NavLink to={`/products/${menu.id}`} >
                     <Button variant='outlined'>Buy Now
                     </Button>
                   </NavLink>
