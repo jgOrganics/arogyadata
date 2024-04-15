@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   Link, Button, Box,
   Card,
@@ -58,7 +58,7 @@ const images = [
   },
 ];
 const Home = () => {
- 
+
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
@@ -86,6 +86,38 @@ const Home = () => {
     // Navigate to the desired route when the button is clicked
     navigate('/products');
   };
+
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const api = "http://localhost:3000/data";
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(api);
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const jsonData = await response.json();
+        setData(jsonData);
+      } catch (error) {
+        setError(error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+
 
   return (
     <Layout>
@@ -167,7 +199,7 @@ const Home = () => {
           }
         }
       }}>
-        {MenuList.map((menu) => (
+        {data.map((menu) => (
           <Card sx={{
             // border: 1,
             // borderRadius: 5,
@@ -242,7 +274,7 @@ const Home = () => {
                     {menu.name}
                   </Typography>
                   <Typography variant="h5" gutterBottom component={"div"}>
-                  ₹{menu.price}
+                    ₹{menu.price}
                   </Typography>
                   <Typography variant="h6" gutterBottom component={"div"}>
                     {menu.ratings}
@@ -250,7 +282,7 @@ const Home = () => {
                   <Typography variant="body2">{menu.description}</Typography>
 
                   <NavLink to={`/products/${menu.id}`}
-                  
+
                   >
                     <Button variant='outlined'>Buy Now
                     </Button>
@@ -312,7 +344,7 @@ const Home = () => {
                     {menu.name}
                   </Typography>
                   <Typography variant="h5" gutterBottom component={"div"}>
-                  ₹{menu.price}
+                    ₹{menu.price}
                   </Typography>
                   <Typography variant="h6" gutterBottom component={"div"}>
                     {menu.ratings}

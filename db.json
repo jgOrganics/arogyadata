@@ -1,0 +1,33 @@
+
+{
+    "data": [
+        {
+            "name": "Flowering Trees",
+            "description":
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
+            "image": "../images/fruits.jpg",
+            "price": 200
+          },
+          {
+            "name": "Palm Trees",
+            "description":
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
+            "image": "../images/palm.jpg",
+            "price": 250
+          },
+          {
+            "name": "Fruits Trees",
+            "description":
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
+            "image": "../images/fruits.jpg",
+            "price": 300
+          },
+          {
+            "name": "Nut Trees",
+            "description":
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
+            "image": "../images/nuts.jpg",
+            "price": 100
+          }
+    ]
+  }
