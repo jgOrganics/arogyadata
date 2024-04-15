@@ -138,7 +138,7 @@ const Home = () => {
               {
                 ml: 2,
                 '@media (max-width: 600px)': {
-                  fontSize:'1.5rem'  
+                  fontSize: '1.5rem'
                 },
               }
             }
@@ -150,7 +150,7 @@ const Home = () => {
               ml: 2,
               marginBlock: 2,
               '@media (max-width: 600px)': {
-                fontSize:'1.5rem'  
+                fontSize: '1.5rem'
               },
             }}
             variant='h4' color={"white"}
@@ -174,7 +174,7 @@ const Home = () => {
       </Box>
       <Box sx={{
         my: 7,
-        ml: 13,
+        ml: 12,
         textAlign: 'left',
         p: 2,
         "& h4": {
@@ -183,14 +183,10 @@ const Home = () => {
           fontSize: "2rem"
 
         },
-
         "@media (max-width:600px)": {
-          mt: 0,
-          mb: 2,
-          ml: 18,
+          mt: 2,
           "& h4": {
-            fontSize: "1.5rem",
-
+            fontSize: "1.5rem"
           }
         }
       }}>
