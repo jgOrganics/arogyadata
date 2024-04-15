@@ -136,7 +136,10 @@ const Home = () => {
             color={"white"}
             sx={
               {
-                ml: 2
+                ml: 2,
+                '@media (max-width: 600px)': {
+                  fontSize:'1.5rem'  
+                },
               }
             }
           >
@@ -146,6 +149,9 @@ const Home = () => {
             sx={{
               ml: 2,
               marginBlock: 2,
+              '@media (max-width: 600px)': {
+                fontSize:'1.5rem'  
+              },
             }}
             variant='h4' color={"white"}
 
