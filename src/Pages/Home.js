@@ -12,12 +12,11 @@ import '../Styles/HomeStyle.css';
 import Layout from '../Components/Layouts/Layout';
 import { MenuList } from "../Data/data";
 import { GodMenuList } from "../Data/data_god";
-import DATA, { TrendMenuList } from "../Data/data_trend";
+import DATA from "../Data/data_trend";
 
 
 import SwipeableViews from 'react-swipeable-views';
 import { makeStyles } from '@material-ui/core/styles';
-// import Sidebar from './SLideBar';
 import { Paper } from '@material-ui/core';
 import { useTheme } from '@mui/material/styles';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
