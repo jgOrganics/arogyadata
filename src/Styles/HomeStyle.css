@@ -80,34 +80,3 @@
   }
 }
 
-@media only screen and (max-width: 479px) {
-  .home {
-    justify-content: center;
-    align-items: center;
-  }
-  .headerContainer {
-    margin-left: 0;
-    border-radius: 10px;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #07090a;
-  }
-  .home .headerContainer h1 {
-    font-size: 40px;
-    height: 30px;
-    margin: 30px 0px;
-    color: white;
-  }
-  .home .headerContainer p {
-    font-size: 30px;
-    color: white;
-  }
-  .home .headerContainer button {
-    background-color: white;
-    color: black;
-    margin-bottom: 30px;
-  }
-}
