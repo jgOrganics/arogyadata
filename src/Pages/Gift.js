@@ -20,9 +20,9 @@ const Gift = () => {
     const handleSelect = (event) => {
         setSelectedValue(event.target.value);
     };
-    const handleClearSelection = () => {
-        setSelectedValue('');
-    };
+    // const handleClearSelection = () => {
+    //     setSelectedValue('');
+    // };
 
     return (
         <Layout>
