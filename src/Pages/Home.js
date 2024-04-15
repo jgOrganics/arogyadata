@@ -125,7 +125,7 @@ const Home = () => {
         className="home"
         style={{
           backgroundImage: `url(${Banner})`,
-          '@media (max-width: 600px)': {
+          '@media only screen and (min-width: 480px) and (max-width: 767px)': {
             padding: '10px', // Reduce padding on small screens
           },
         }}
@@ -137,7 +137,7 @@ const Home = () => {
             sx={
               {
                 ml: 2,
-                '@media (max-width: 600px)': {
+                '@media only screen and (min-width: 480px) and (max-width: 767px)': {
                   fontSize: '1.5rem'
                 },
               }
@@ -149,7 +149,7 @@ const Home = () => {
             sx={{
               ml: 2,
               marginBlock: 2,
-              '@media (max-width: 600px)': {
+              '@media only screen and (min-width: 480px) and (max-width: 767px)': {
                 fontSize: '1.5rem'
               },
             }}
@@ -173,8 +173,7 @@ const Home = () => {
         </Box>
       </Box>
       <Box sx={{
-        my: 7,
-        ml: 12,
+        my: 3,
         textAlign: 'center',
         p: 2,
         "& h4": {
@@ -183,7 +182,7 @@ const Home = () => {
           fontSize: "2rem"
 
         },
-        "@media (max-width:600px)": {
+        "@media only screen and (min-width: 480px) and (max-width: 767px)": {
           mt: 2,
           "& h4": {
             fontSize: "1.5rem"
@@ -197,7 +196,7 @@ const Home = () => {
 
       <Box sx={{
         display: "flex", flexWrap: "wrap", justifyContent: "center",
-        "@media (max-width:600px)": {
+        "@media only screen and (min-width: 480px) and (max-width: 767px)": {
           mt: 0,
           "& h4": {
             fontSize: "1.5rem"
@@ -232,8 +231,7 @@ const Home = () => {
       </Box>
 
       <Box sx={{
-        my: 7,
-        ml: 12,
+        my: 3,
         textAlign: 'center',
         p: 2,
         "& h4": {
@@ -243,7 +241,7 @@ const Home = () => {
 
         },
 
-        "@media (max-width:600px)": {
+        "@media only screen and (min-width: 480px) and (max-width: 767px)": {
           mt: 2,
           "& h4": {
             fontSize: "1.5rem"
@@ -312,7 +310,7 @@ const Home = () => {
 
         },
 
-        "@media (max-width:600px)": {
+        "@media only screen and (min-width: 480px) and (max-width: 767px)": {
           mt: 0,
           my: 2,
           m: 2,
@@ -411,7 +409,7 @@ const Home = () => {
           fontSize: "2rem"
 
         },
-        "@media (max-width:600px)": {
+        "@media only screen and (min-width: 480px) and (max-width: 767px)": {
           mt: 0,
           mb: 2,
           ml: 2,
