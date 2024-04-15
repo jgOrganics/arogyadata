@@ -175,7 +175,7 @@ const Home = () => {
       <Box sx={{
         my: 7,
         ml: 12,
-        textAlign: 'left',
+        textAlign: 'center',
         p: 2,
         "& h4": {
           fontWeight: "bold",
@@ -234,7 +234,7 @@ const Home = () => {
       <Box sx={{
         my: 7,
         ml: 12,
-        textAlign: 'left',
+        textAlign: 'center',
         p: 2,
         "& h4": {
           fontWeight: "bold",
@@ -244,7 +244,7 @@ const Home = () => {
         },
 
         "@media (max-width:600px)": {
-          mt: 0,
+          mt: 2,
           "& h4": {
             fontSize: "1.5rem"
           }
