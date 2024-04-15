@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './Pages/Home';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from './Pages/About';
 import Contact from './Pages/Contact';
-// import { Gif, Menu } from '@mui/icons-material';
 import PageNotFound from './Pages/PageNotFound';
 import Gift from './Pages/Gift';
 import ProductDetail from './Pages/ProductDetails';

@@ -9,14 +9,11 @@ import Layout from '../Components/Layouts/Layout';
 
 const ProductDetail = () => {
     const [cartBtn, setCartBtn] = useState("Add to Cart")
-    {/* Now we need a product id which is pass from the product page. */ }
     const proid = useParams();
 
     const proDetail = DATA.filter(x => x.id == proid.id)
     const product = proDetail[0];
     console.log(product);
-
-    // We need to store useDispatch in a variable
     const dispatch = useDispatch()
 
     const handleCart = (product) => {

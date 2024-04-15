@@ -5,12 +5,13 @@ import { Box, FormControlLabel, Typography, RadioGroup, Radio } from '@mui/mater
 import { TextField, Button, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 
 const Gift = () => {
-    const [checked, setChecked] = React.useState(false);
+
     const [selectedValue, setSelectedValue] = React.useState('female');
     const [selectedItem, setSelectedItem] = React.useState('');
-    // const [selectedItems, setSelectedItems] = React.useState([]);
+
+
     const handleChange = (event) => {
-        setChecked(event.target.checked);
+        setSelectedItem(event.target.value);
     };
     const handleChange1 = (event) => {
         setSelectedItem(event.target.value);
