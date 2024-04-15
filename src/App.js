@@ -18,7 +18,7 @@ function App() {
         <Route path='/gift' element={<Gift />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/checkout' element={<Checkout />} />
-        <Route exact path="/products/:id" element={<ProductDetail />} />
+        {/* <Route exact path="/products/:id" element={<ProductDetail />} /> */}
         <Route path='/pagenotfound' element={<PageNotFound />} />
         <Route />
       </Routes>
