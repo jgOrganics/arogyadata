@@ -6,6 +6,7 @@ import {
   CardContent,
   CardMedia,
   Typography,
+  Paper
 } from '@mui/material';
 import Banner from "../images/banner.jpg";
 import '../Styles/HomeStyle.css';
@@ -13,11 +14,8 @@ import Layout from '../Components/Layouts/Layout';
 import { MenuList } from "../Data/data";
 import { GodMenuList } from "../Data/data_god";
 import DATA from "../Data/data_trend";
-
-
 import SwipeableViews from 'react-swipeable-views';
-import { makeStyles } from '@material-ui/core/styles';
-import { Paper } from '@material-ui/core';
+// import { Paper } from '@material-ui/core';
 import { useTheme } from '@mui/material/styles';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
@@ -26,16 +24,6 @@ import MobileStepper from '@mui/material/MobileStepper';
 import { Rating } from '@material-ui/lab';
 import { useNavigate } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-const useStyles = makeStyles((theme) => ({
-  slide: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-  },
-  carouselContainer: {
-    maxWidth: '100%',
-    overflow: 'hidden',
-  },
-}));
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -69,7 +57,7 @@ const images = [
   },
 ];
 const Home = () => {
-  const classes = useStyles();
+ 
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;

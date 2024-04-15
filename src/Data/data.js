@@ -3,7 +3,7 @@ import Flowers from "../images/flowers.jpg";
 import PalmTrees from "../images/palm.jpg";
 import FruitsTrees from "../images/fruits.jpg";
 import NutTrees from "../images/nuts.jpg";
-import UrbanTrees from "../images/park.png";
+// import UrbanTrees from "../images/park.png";
 
 export const MenuList = [
   {
