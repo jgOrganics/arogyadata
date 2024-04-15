@@ -6,7 +6,8 @@ import {
   CardContent,
   CardMedia,
   Typography,
-  Paper
+  Paper,
+  Rating
 } from '@mui/material';
 import Banner from "../images/banner.jpg";
 import '../Styles/HomeStyle.css';
@@ -21,7 +22,7 @@ import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import { autoPlay } from 'react-swipeable-views-utils';
 import MobileStepper from '@mui/material/MobileStepper';
-import { Rating } from '@material-ui/lab';
+// import { Rating } from '@material-ui/lab';
 import { useNavigate } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
