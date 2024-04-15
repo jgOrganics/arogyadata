@@ -125,6 +125,9 @@ const Home = () => {
         className="home"
         style={{
           backgroundImage: `url(${Banner})`,
+          '@media (max-width: 600px)': {
+            padding: '10px', // Reduce padding on small screens
+          },
         }}
       >
         <Box className='headerContainer'>
@@ -320,7 +323,15 @@ const Home = () => {
           Tree Plantaion Gift for God(hike)
         </Typography>
       </Box>
-      <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
+      <Box sx={{
+        display: "flex", flexWrap: "wrap", justifyContent: "center",
+        '@media (max-width: 600px)': {
+          flexDirection: 'column', // Stack items vertically
+          alignItems: 'center', // Center items horizontally
+        }
+      }}
+
+      >
         {GodMenuList.map((menu) => (
           <Link to="/products">
             <Card sx={{
