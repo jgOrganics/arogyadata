@@ -84,7 +84,7 @@ const Home = () => {
 
   const handleClick = () => {
     // Navigate to the desired route when the button is clicked
-    navigate('/products');
+    navigate('/gift');
   };
 
   // const [data, setData] = useState([]);

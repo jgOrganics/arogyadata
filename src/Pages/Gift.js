@@ -28,14 +28,14 @@ const Gift = () => {
         <Layout>
             <Box sx={{
                 my: 7,
-                ml: 12,
+                ml: 5,
                 textAlign: 'left',
+                mx:15,
                 p: 2,
                 "& h4": {
                     fontWeight: "bold",
                     my: 2,
                     fontSize: "2rem"
-
                 },
                 "@media (max-width:600px)": {
                     mt: 0,
@@ -46,16 +46,21 @@ const Gift = () => {
                     }
                 }
             }}>
-                <Typography variant='h4' align='center'>
-                    Order Trees
-                </Typography>
+                <Box sx={{
+                    backgroundColor:"lightgray"
+                }}>
+                    <Typography variant='h4' align='center'>
+                    Tree Registration Form
+                    </Typography>
+                </Box>
                 <form
                 //  onSubmit={handleSubmit}
                 >
                     <TextField
-                        name="name"
-                        label="Name"
-                        // value={checked}
+                        name="Name"
+                        label="Name on certificate"
+                        type="name"
+                        // value={formData.email}
                         onChange={handleChange}
                         fullWidth
                         margin="normal"
@@ -69,6 +74,7 @@ const Gift = () => {
                         fullWidth
                         margin="normal"
                     />
+
                     <FormControl fullWidth margin="normal">
                         <InputLabel>State</InputLabel>
                         <Select
@@ -100,22 +106,45 @@ const Gift = () => {
                         fullWidth
                         margin="normal"
                     />
+                    <TextField
+                        name="location"
+                        label="Location"
+                        type="email"
+                        // value={formData.email}
+                        onChange={handleChange}
+                        fullWidth
+                        margin="normal"
+                    />
+                    <TextField
+                        name="no_trees"
+                        label="Enter no of trees"
+                        type="no_tree"
+                        // value={formData.email}
+                        onChange={handleChange}
+                        fullWidth
+                        margin="normal"
+                    />
+
                     <div>
-                        <FormControl component="fieldset">
+                        <Typography>Mode of Payment</Typography>
+                        <FormControl component="fieldset" >
                             <RadioGroup value={selectedValue} onChange={() => { }} onMouseDown={handleSelect}>
-                                <FormControlLabel value="option1" control={<Radio />} label="1 Tree" />
-                                <FormControlLabel value="option2" control={<Radio />} label="5 Tree" />
-                                <FormControlLabel value="option3" control={<Radio />} label="10 Tree" />
+                                <FormControlLabel value="option1" control={<Radio />} label="Cash" />
+                                <FormControlLabel value="option2" control={<Radio />} label="Online" />
+                                <FormControlLabel value="option3" control={<Radio />} label="Cheque" />
                             </RadioGroup>
                         </FormControl>
                     </div>
-
-                    <Button onClick={handleClearSelection} variant="contained" color="secondary">
-                        Clear Selection
-                    </Button>
-                    <Button type="submit" variant="contained" color="primary">
-                        Submit
-                    </Button>
+                    <Box sx={{
+                        my: 4
+                    }}>
+                        <Button type="submit" variant="outlined" color="primary">
+                            Submit
+                        </Button>
+                        <Button sx={{ ml: 5 }} type="submit" variant="outlined" color="error">
+                            Cancel
+                        </Button>
+                    </Box>
                 </form>
             </Box>
         </Layout>
