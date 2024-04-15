@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/arogyadata/static/css/main.3401717c.css",
+    "main.js": "/arogyadata/static/js/main.1be5383c.js",
+    "static/js/453.6e7244f8.chunk.js": "/arogyadata/static/js/453.6e7244f8.chunk.js",
+    "static/media/danamma.png": "/arogyadata/static/media/danamma.3cfe9a55c9edc00cabf3.png",
+    "static/media/dattatreya.png": "/arogyadata/static/media/dattatreya.5def33a82917de414064.png",
+    "static/media/yallamma.png": "/arogyadata/static/media/yallamma.16a207a6dc25b89b0931.png",
+    "static/media/aniversary.jpg": "/arogyadata/static/media/aniversary.7eb92f2673d91065345f.jpg",
+    "static/media/valntines.jpg": "/arogyadata/static/media/valntines.9fa622e60969ce3cad4e.jpg",
+    "static/media/banner.jpg": "/arogyadata/static/media/banner.5df00806fc9105161095.jpg",
+    "static/media/baby.jpg": "/arogyadata/static/media/baby.122f504d859b774fa046.jpg",
+    "static/media/nuts.jpg": "/arogyadata/static/media/nuts.9f2bf71ce41fc6670993.jpg",
+    "static/media/palm.jpg": "/arogyadata/static/media/palm.a0d508b865f98c3c8f5a.jpg",
+    "static/media/bday.jpg": "/arogyadata/static/media/bday.3e6ac7c9163ff4575777.jpg",
+    "static/media/fruits.jpg": "/arogyadata/static/media/fruits.80f53b6ce1f49f2055c3.jpg",
+    "static/media/flowers.jpg": "/arogyadata/static/media/flowers.2c219794637d0092ddf6.jpg",
+    "static/media/Bhavani.jpg": "/arogyadata/static/media/Bhavani.73ad669328da21d30225.jpg",
+    "static/media/pandarapur.jpg": "/arogyadata/static/media/pandarapur.c684f5e982aba221a2d6.jpg",
+    "static/media/Ragavendra.jpg": "/arogyadata/static/media/Ragavendra.6bb3377870baacfbc3fd.jpg",
+    "static/media/arogyadata.png": "/arogyadata/static/media/arogyadata.3e6105c5e57d66523495.png",
+    "static/media/park.png": "/arogyadata/static/media/park.29ae4d72a4e1f5b6ca8a.png",
+    "index.html": "/arogyadata/index.html",
+    "main.3401717c.css.map": "/arogyadata/static/css/main.3401717c.css.map",
+    "main.1be5383c.js.map": "/arogyadata/static/js/main.1be5383c.js.map",
+    "453.6e7244f8.chunk.js.map": "/arogyadata/static/js/453.6e7244f8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3401717c.css",
+    "static/js/main.1be5383c.js"
+  ]
+}
