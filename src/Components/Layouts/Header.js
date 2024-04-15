@@ -1,13 +1,11 @@
 
 import { AppBar, Box, Drawer, IconButton, Toolbar, Typography, Divider, TextField } from '@mui/material'
 import React from 'react';
-// import FastfoodIcon from "@mui/icons-material/Fastfood";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link, } from 'react-router-dom';
 import Logo from "../../images/arogyadata.png";
 import "../../Styles/HeaderStyle.css";
 import { useState } from 'react';
-// import CartBtn from '../CartBtn';
 
 const Header = () => {
 

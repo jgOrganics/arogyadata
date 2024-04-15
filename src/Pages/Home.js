@@ -122,15 +122,14 @@ const Home = () => {
   return (
     <Layout>
       <Box
+      sm={6}
         className="home"
         style={{
           backgroundImage: `url(${Banner})`,
-          '@media only screen and (max-width: 479px) ' :{
+          '@media only screen and (max-width: 479px) ': {
             padding: '10px'
-          } ,
-          '@media only screen and (min-width: 480px) and (max-width: 767px)': {
-            padding: '10px', // Reduce padding on small screens
           },
+      
         }}
       >
         <Box className='headerContainer'>
@@ -140,9 +139,9 @@ const Home = () => {
             sx={
               {
                 ml: 2,
-                '@media only screen and (max-width: 479px) ' :{
+                '@media only screen and (max-width: 479px) ': {
                   fontSize: '1.5rem'
-                } ,
+                },
                 '@media only screen and (min-width: 480px) and (max-width: 767px)': {
                   fontSize: '1.5rem'
                 },
@@ -155,9 +154,9 @@ const Home = () => {
             sx={{
               ml: 2,
               marginBlock: 2,
-              '@media only screen and (max-width: 479px) ' :{
+              '@media only screen and (max-width: 479px) ': {
                 fontSize: '1.5rem'
-              } ,
+              },
               '@media only screen and (min-width: 480px) and (max-width: 767px)': {
                 fontSize: '1.5rem'
               },
@@ -191,12 +190,12 @@ const Home = () => {
           fontSize: "2rem"
 
         },
-        '@media only screen and (max-width: 479px) ' :{
+        '@media only screen and (max-width: 479px) ': {
           mt: 2,
           "& h4": {
             fontSize: "1.5rem"
           }
-        } ,
+        },
         "@media only screen and (min-width: 480px) and (max-width: 767px)": {
           mt: 2,
           "& h4": {
@@ -211,12 +210,12 @@ const Home = () => {
 
       <Box sx={{
         display: "flex", flexWrap: "wrap", justifyContent: "center",
-        '@media only screen and (max-width: 479px) ' :{
+        '@media only screen and (max-width: 479px) ': {
           mt: 2,
           "& h4": {
             fontSize: "1.5rem"
           }
-        } ,
+        },
         "@media only screen and (min-width: 480px) and (max-width: 767px)": {
           mt: 0,
           "& h4": {
@@ -261,12 +260,12 @@ const Home = () => {
           fontSize: "2rem"
 
         },
-        '@media only screen and (max-width: 479px) ' :{
+        '@media only screen and (max-width: 479px) ': {
           mt: 2,
           "& h4": {
             fontSize: "1.5rem"
           }
-        } ,
+        },
         "@media only screen and (min-width: 480px) and (max-width: 767px)": {
           mt: 2,
           "& h4": {
@@ -324,34 +323,36 @@ const Home = () => {
         ))}
       </Box>
 
-      <Box sx={{
-        my: 7,
-        ml: 12,
-        textAlign: 'left',
-        p: 2,
-        "& h4": {
-          fontWeight: "bold",
-          my: 2,
-          fontSize: "2rem"
+      <Box
+        sm={12}
+        sx={{
+          my: 7,
+          ml: 12,
+          textAlign: 'left',
+          p: 2,
+          "& h4": {
+            fontWeight: "bold",
+            my: 2,
+            fontSize: "2rem"
 
-        },
-        '@media only screen and (max-width: 479px) ' :{
-          mt: 0,
-          my: 2,
-          m: 2,
-          "& h4": {
-            fontSize: "1.5rem"
+          },
+          '@media only screen and (max-width: 479px) ': {
+            mt: 0,
+            my: 2,
+            m: 2,
+            "& h4": {
+              fontSize: "1.5rem"
+            }
+          },
+          "@media only screen and (min-width: 480px) and (max-width: 767px)": {
+            mt: 0,
+            my: 2,
+            m: 2,
+            "& h4": {
+              fontSize: "1.5rem"
+            }
           }
-        } ,
-        "@media only screen and (min-width: 480px) and (max-width: 767px)": {
-          mt: 0,
-          my: 2,
-          m: 2,
-          "& h4": {
-            fontSize: "1.5rem"
-          }
-        }
-      }}>
+        }}>
         <Typography variant='h4'>
           Tree Plantaion Gift for God(hike)
         </Typography>
