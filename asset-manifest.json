@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/arogyadata/static/css/main.3401717c.css",
-    "main.js": "/arogyadata/static/js/main.8574ebac.js",
+    "main.js": "/arogyadata/static/js/main.b0d5fc78.js",
     "static/js/453.6e7244f8.chunk.js": "/arogyadata/static/js/453.6e7244f8.chunk.js",
     "static/media/danamma.png": "/arogyadata/static/media/danamma.3cfe9a55c9edc00cabf3.png",
     "static/media/dattatreya.png": "/arogyadata/static/media/dattatreya.5def33a82917de414064.png",
@@ -21,11 +21,11 @@
     "static/media/arogyadata.png": "/arogyadata/static/media/arogyadata.3e6105c5e57d66523495.png",
     "index.html": "/arogyadata/index.html",
     "main.3401717c.css.map": "/arogyadata/static/css/main.3401717c.css.map",
-    "main.8574ebac.js.map": "/arogyadata/static/js/main.8574ebac.js.map",
+    "main.b0d5fc78.js.map": "/arogyadata/static/js/main.b0d5fc78.js.map",
     "453.6e7244f8.chunk.js.map": "/arogyadata/static/js/453.6e7244f8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3401717c.css",
-    "static/js/main.8574ebac.js"
+    "static/js/main.b0d5fc78.js"
   ]
 }
