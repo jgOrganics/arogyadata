@@ -87,36 +87,36 @@ const Home = () => {
     navigate('/products');
   };
 
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const api = "http://localhost:3000/data";
+  // const [data, setData] = useState([]);
+  // const [loading, setLoading] = useState(true);
+  // const [error, setError] = useState(null);
+  // const api = "http://localhost:3000/data";
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(api);
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        const jsonData = await response.json();
-        setData(jsonData);
-      } catch (error) {
-        setError(error);
-      } finally {
-        setLoading(false);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch(api);
+  //       if (!response.ok) {
+  //         throw new Error('Network response was not ok');
+  //       }
+  //       const jsonData = await response.json();
+  //       setData(jsonData);
+  //     } catch (error) {
+  //       setError(error);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    fetchData();
-  }, []);
-  if (loading) {
-    return <div>Loading...</div>;
-  }
+  //   fetchData();
+  // }, []);
+  // if (loading) {
+  //   return <div>Loading...</div>;
+  // }
 
-  if (error) {
-    return <div>Error: {error.message}</div>;
-  }
+  // if (error) {
+  //   return <div>Error: {error.message}</div>;
+  // }
 
 
   return (
@@ -199,7 +199,7 @@ const Home = () => {
           }
         }
       }}>
-        {data.map((menu) => (
+        {MenuList.map((menu) => (
           <Card sx={{
             // border: 1,
             // borderRadius: 5,
