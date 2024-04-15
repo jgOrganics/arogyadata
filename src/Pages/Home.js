@@ -7,7 +7,7 @@ import {
   CardMedia,
   Typography,
   Paper,
-  Rating
+  
 } from '@mui/material';
 import Banner from "../images/banner.jpg";
 import '../Styles/HomeStyle.css';
