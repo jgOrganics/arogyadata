@@ -32,7 +32,6 @@ const ProductDetail = () => {
 
     return (
         <Layout>
-    
             <Container maxWidth="lg" sx={{ my: 5, py: 3 }}>
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={6} sx={{ display: 'flex', justifyContent: 'center' }}>
@@ -59,4 +58,4 @@ const ProductDetail = () => {
     )
 }
 
-export default ProductDetail
+export default ProductDetail;

@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import { delItem } from '../redux/actions/index'
 import { NavLink } from 'react-router-dom'
-import { Box, Button, Container, IconButton, Typography } from '@mui/material'
+import { Box, Button, Container, FormControl, FormControlLabel, IconButton, Radio, RadioGroup, Typography } from '@mui/material'
 import CloseIcon from "@mui/icons-material/Close";
 import Layout from './Layouts/Layout'
 
@@ -14,6 +14,13 @@ const Cart = () => {
     const handleClose = (item) => {
         dispatch(delItem(item))
     }
+
+
+    const [selectedValue, setSelectedValue] = React.useState(1);
+
+    const handleSelect = (event) => {
+        setSelectedValue(event.target.value);
+    };
 
     const cartItems = (cartItem) => {
         return (
@@ -43,8 +50,17 @@ const Cart = () => {
                                 {cartItem.name}
                             </Typography>
                             <Typography variant="body1" gutterBottom fontWeight="bold">
-                                ${cartItem.price}
+                                ₹{cartItem.price * selectedValue}
                             </Typography>
+                            <div>
+                                <FormControl component="fieldset">
+                                    <RadioGroup value={selectedValue} onChange={() => { }} onMouseDown={handleSelect}>
+                                        <FormControlLabel value="1" control={<Radio />} label="1 Tree" />
+                                        <FormControlLabel value="5" control={<Radio />} label="5 Tree" />
+                                        <FormControlLabel value="10" control={<Radio />} label="10 Tree" />
+                                    </RadioGroup>
+                                </FormControl>
+                            </div>
                         </Box>
                     </Box>
                 </Box>
@@ -85,10 +101,12 @@ const Cart = () => {
 
             <Container>
                 <div className="row">
-                    <Button
-                        to="/checkout" variant="outlined" color="primary" sx={{ mb: 5, width: '25%', mx: 'auto', ml:50 }}>
-                        Proceed To Checkout
-                    </Button>
+                    <NavLink to="/checkout" >
+                        <Button
+                            to="/checkout" variant="outlined" color="primary" sx={{ mb: 5, width: '25%', mx: 'auto', ml: 50 }}>
+                            Proceed To Checkout
+                        </Button>
+                    </NavLink>
                 </div>
             </Container>
         );

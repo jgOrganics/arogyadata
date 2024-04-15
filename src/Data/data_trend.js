@@ -11,7 +11,7 @@ import Val from "../images/Trends/valntines.jpg";
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: Bday,
-    price: "₹"+250,
+    price: 250,
   },
   {
     id:2,
@@ -19,7 +19,7 @@ import Val from "../images/Trends/valntines.jpg";
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: Aniversary,
-    price: "₹"+250,
+    price: 250,
   },
   {
     id:3,
@@ -27,7 +27,7 @@ import Val from "../images/Trends/valntines.jpg";
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: Baby,
-    price: "₹"+300,
+    price: 300,
   },
   {
     id:4,
@@ -35,7 +35,7 @@ import Val from "../images/Trends/valntines.jpg";
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: Val,
-    price: "₹"+100,
+    price: 100,
   }
 //   {
 //     name: "Trees for Shree Ram",

@@ -254,7 +254,7 @@ const Home = () => {
                     {menu.name}
                   </Typography>
                   <Typography variant="h5" gutterBottom component={"div"}>
-                    {menu.price}
+                  ₹{menu.price}
                   </Typography>
                   <Typography variant="h6" gutterBottom component={"div"}>
                     {menu.ratings}
@@ -324,7 +324,7 @@ const Home = () => {
                     {menu.name}
                   </Typography>
                   <Typography variant="h5" gutterBottom component={"div"}>
-                    {menu.price}
+                  ₹{menu.price}
                   </Typography>
                   <Typography variant="h6" gutterBottom component={"div"}>
                     {menu.ratings}

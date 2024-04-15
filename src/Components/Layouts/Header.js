@@ -67,7 +67,7 @@ const Header = () => {
         <li>
           <Link to={"/contact"}>Contact</Link>
         </li>
-        <CartBtn/>
+        {/* <CartBtn/> */}
       </ul>
     </Box>
   );
@@ -110,6 +110,7 @@ const Header = () => {
                 marginTop: '10px', marginLeft: "100px",
               }}
             />
+             <CartBtn/>
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               <ul className="navigation-menu">
                 <li>
@@ -128,7 +129,7 @@ const Header = () => {
                 <li>
                   <Link to={"/contact"}>Contact</Link>
                 </li>
-                <CartBtn/>
+              
               </ul>
             </Box>
           </Toolbar>

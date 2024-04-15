@@ -14,7 +14,7 @@ export const GodMenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: Dannamma,
     ratings: "Ratings:4.5",
-    price: "₹" + 200,
+    price: 200,
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ export const GodMenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: Datatreya,
     ratings: "Ratings:4.5",
-    price: "₹" + 250,
+    price:  250,
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ export const GodMenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: Yallamma,
     ratings: "Ratings:4.9",
-    price: "₹" + 300,
+    price: 300,
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ export const GodMenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: Raghavendra,
     ratings: "Ratings:4.7",
-    price: "₹" + 100,
+    price: 100,
   },
   {
     id: 5,
@@ -50,7 +50,7 @@ export const GodMenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: Bhavani,
     ratings: "Ratings:4.2",
-    price: "₹" + 400,
+    price:  400,
   },
   {
     id: 6,
@@ -59,6 +59,6 @@ export const GodMenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: Vittal,
     ratings: "Ratings:4.1",
-    price: "₹" + 500,
+    price:  500,
   },
 ];
