@@ -7,7 +7,7 @@ import { Link, } from 'react-router-dom';
 import Logo from "../../images/arogyadata.png";
 import "../../Styles/HeaderStyle.css";
 import { useState } from 'react';
-import CartBtn from '../CartBtn';
+// import CartBtn from '../CartBtn';
 
 const Header = () => {
 
@@ -110,7 +110,7 @@ const Header = () => {
                 marginTop: '10px', marginLeft: "100px",
               }}
             />
-             <CartBtn/>
+             {/* <CartBtn/> */}
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               <ul className="navigation-menu">
                 <li>
